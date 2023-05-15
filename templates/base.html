@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+  <title>
+    {% block title %} Welcome {% endblock %} | Chat App
+</title>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+
+<div class="page">
+  {% block heading %} Chat App {% endblock %}
+  <div class="navigation">
+ 
+  {% block body %}{% endblock %}
+</div>
+</html>

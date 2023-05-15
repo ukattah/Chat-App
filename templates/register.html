@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %} Register {% endblock %}
+{% block heading %} Register - {{ super() }} {% endblock %}
+
+{% block body %}
+<form action="http://127.0.0.1:5000/register/" method="post">
+    <dl>
+        <dt>Username:
+        <input type="text" name="user" size="30" >
+         <dt>email:
+        <input type="email" name="email" size="30">
+        <dt>Password:
+        <input type="password" name="pass" size="30">
+        <dt>Retype password:
+        <input type="password" name="retyped_pass" size="30">
+    </dl>
+    <div class="register_actions"><input type="submit" name="register" value="Register">
+    </div>
+  </form>
+{% endblock %}
